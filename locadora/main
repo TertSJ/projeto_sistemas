@@ -1,0 +1,50 @@
+class Seguro :
+    nome: string
+    categoria: string
+    cobertura:string
+    valor: double
+
+class Carro :
+
+    modelo:string
+    ano: inteiro
+    placa: string
+    cor: string
+
+
+class locador(Pessoa):
+    salario: double
+    
+
+
+class Locatario (Pessoa):
+
+    cnh: string
+
+
+
+class Endereco :
+    logradouro: string
+    numero: string
+    CEP:string
+    bairro: string
+    cidade: string
+    estado:    string
+    complemento: string
+
+class Pessoa :
+    nome: string
+    cpf: string
+    telefone: string
+    endereco: Endereco()
+
+
+class Locacao :
+    dataIncial: DataTime
+    dataFinal:DataTime
+    Carro: carro
+    locador: locador
+    locatário: Locatario
+    seguro: Seguro
+        
+
